@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+E:\IdeaProjects\ChatRobot\.metadata\.plugins\org.eclipse.jdt.core
+3095551288.index
+3322487815.index
+698557289.index
+1584739578.index
+3642097490.index

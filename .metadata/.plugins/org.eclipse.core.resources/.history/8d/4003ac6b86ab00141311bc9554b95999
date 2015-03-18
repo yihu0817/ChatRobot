@@ -1,0 +1,32 @@
+package cn.buaa.myweixin;
+
+
+
+import cn.buaa.myweixin.service.MessageService;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.app.Activity;
+import android.content.Intent;
+
+public class LoadingActivity extends Activity{
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);	
+		setContentView(R.layout.loading);
+			
+	new Handler().postDelayed(new Runnable(){
+		@Override
+		public void run(){
+			Intent intent = new Intent (LoadingActivity.this,Whatsnew.class);			
+			startActivity(intent);			
+			LoadingActivity.this.finish();
+			
+			Log.v("tag", "Æô¶¯·þÎñ");
+			MessageService.startMessageService(LoadingActivity.this);
+			
+		}
+	}, 2000);
+   }
+}
